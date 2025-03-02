@@ -1,0 +1,22 @@
+.navbar-container{
+    height: 56px;
+    background: var(--flipkart-lightblue);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar{
+    max-width: 1028px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 124px;
+}
+
+.navbar-logo{
+    width: 80px;
+}
