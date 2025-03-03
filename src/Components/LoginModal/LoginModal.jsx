@@ -1,11 +1,28 @@
 import React,{useState} from 'react'
 import {RxCross2} from 'react-icons/rx'
 import './LoginModal.css'
+import supabase from '../../Superbase'
 
 const LoginModal = ({isOpen, setIsOpen}) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [loginType, setLoginType] = useState(true)
+
+  const signup = async() =>{
+    const {data, error} = await supabase.auth.signup({
+      email,
+      password
+    });
+    console.log(data,error);
+  }
+
+  const login = async() =>{
+    const {data, error} = await supabase.auth.signInWithPassword({
+      email,
+      password
+    })
+    console.log(data,error);
+  }
 
   return (
     isOpen ? (<div className="overlay">
@@ -45,9 +62,9 @@ const LoginModal = ({isOpen, setIsOpen}) => {
           <span style={{color:'blue'}}>Privacy policy</span>
         </p>
         {loginType?(
-          <button className='login-btn'>Login</button>
+          <button className='login-btn'onClick={login}>Login</button>
         ):(
-          <button className='login-btn'>Signup</button>
+          <button className='login-btn' onClick={signup}>Signup</button>
         )}
 
         {loginType?(
