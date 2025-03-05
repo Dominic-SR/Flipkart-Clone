@@ -1,1 +1,1 @@
-Flipkart Clone (02.04)
+Flipkart (02.04)
