@@ -7,12 +7,12 @@ import Cart from './Pages/Cart/Cart'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import { Provider } from 'react-redux'
-import {store} from './app/store';
+// import {store} from './app/store';
 
 function App() {
 
   return (
-    <Provider store={store}>
+    <Provider >
     <BrowserRouter>
     <Navbar />
      <Routes>

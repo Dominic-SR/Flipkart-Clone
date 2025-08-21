@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {RxCross2} from 'react-icons/rx'
 import './LoginModal.css'
-import supabase from '../../Superbase'
+// import supabase from '../../Superbase/'
 
 const LoginModal = ({isOpen, setIsOpen}) => {
   const [email, setEmail] = useState("")
@@ -9,10 +9,10 @@ const LoginModal = ({isOpen, setIsOpen}) => {
   const [loginType, setLoginType] = useState(true)
 
   const signup = async() =>{
-    const {data, error} = await supabase.auth.signUp({
-      email,
-      password
-    });
+    // const {data, error} = await supabase.auth.signUp({
+    //   email,
+    //   password
+    // });
     console.log(data,error);
     if(data.user){
       alert("Account created, please verify your email.")
@@ -20,14 +20,14 @@ const LoginModal = ({isOpen, setIsOpen}) => {
   }
 
   const login = async() =>{
-    const {data, error} = await supabase.auth.signInWithPassword({
-      email,
-      password
-    })
-    if(error){
-      alert(error.message);
-      return
-    }
+    // const {data, error} = await supabase.auth.signInWithPassword({
+    //   email,
+    //   password
+    // })
+    // if(error){
+    //   alert(error.message);
+    //   return
+    // }
   }
 
   return (
