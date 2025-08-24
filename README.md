@@ -11,15 +11,6 @@
 
 <div align="center" dir="auto">
   <p>📱 Mobile View</p>
-
-  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/sm-pic-1.png" 
-  />
-
-  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/sm-pic-2.png" 
-  />
-
-  <img src="https://raw.githubusercontent.com/Dominic-SR/E-Market/refs/heads/main/src/assets/images/sm-pic-3.png" 
-  />
 </div>
 
 <h2> 💻 Technologies used </h2>
