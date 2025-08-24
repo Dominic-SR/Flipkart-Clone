@@ -1,4 +1,4 @@
-<h1 align="center" >🛒 E Market</h1>
+<h1 align="center" >🛒 Flipkart Clone</h1>
 
 <div align="center" dir="auto">
   <p>It's a Responsive 📱 Mobile E commerce website with add to card</p>
