@@ -8,6 +8,8 @@ const LoginModal = ({isOpen, setIsOpen}) => {
   const [password, setPassword] = useState("")
   const [loginType, setLoginType] = useState(true)
 
+  const dispatch = useDispatch()
+
   const signup = async() =>{
     // const {data, error} = await supabase.auth.signUp({
     //   email,
