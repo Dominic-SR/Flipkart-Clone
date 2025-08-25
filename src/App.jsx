@@ -12,7 +12,7 @@ import { Provider } from 'react-redux'
 function App() {
 
   return (
-    <Provider >
+    // <Provider >
     <BrowserRouter>
     <Navbar />
      <Routes>
@@ -22,7 +22,7 @@ function App() {
       <Route path='/cart' element={<Cart />} />
      </Routes>
     </BrowserRouter>
-    </Provider>
+    // </Provider>
   )
 }
 
