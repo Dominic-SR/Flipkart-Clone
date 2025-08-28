@@ -8,7 +8,7 @@ const LoginModal = ({isOpen, setIsOpen}) => {
   const [password, setPassword] = useState("")
   const [loginType, setLoginType] = useState(true)
 
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   const signup = async() =>{
     // const {data, error} = await supabase.auth.signUp({
@@ -17,7 +17,7 @@ const LoginModal = ({isOpen, setIsOpen}) => {
     // });
     console.log(data,error);
     if(data.user){
-      alert("Account created, please verify your email.")
+      // alert("Account created, please verify your email.")
     }
   }
 
